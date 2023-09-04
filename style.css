@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+*{
+  margin: 0 auto;
+}
+.container{
+  width: 100%;
+  margin: auto;
+}
+#header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 70px;
+  padding: 0 20px;
+}
+h1{
+    font-size: 22px;
+    padding: 10px;
+}
+#search_box{
+  position: relative;
+  width: 350px;
+}
+#search_box input{
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 25px;
+  outline: none;
+
+}
+#search_box i{
+  color: black;
+  position: absolute;
+  cursor: pointer;
+  top: 25%;
+  right: 4%;
+}
+#grid{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.img{
+  width: 380px;
+  height: 214px;
+  margin-top: 15px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 2px;
+}
+
+@media(max-width:768px){
+  #main{width: 95%;
+    }
+  .img{width: 100%;
+    }
+  #header h2{padding: 5px 0;}
+}
+@media(max-width:480px){
+  #header h2{
+    text-align: center;
+    font-size: 18px;
+  }
+
+#search_box{
+    width: 80%;
+    margin: auto;
+  }
+
+  #search_box input{
+      font-size: .22px;
+    }
+}
